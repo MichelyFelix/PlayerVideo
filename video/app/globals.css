@@ -1,11 +1,10 @@
-/* --- RESET BÁSICO --- */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/* --- ESTILO DO CORPO DA PÁGINA (body) --- */
 body {
     background-color: #0c2b14;
     font-family: sans-serif;
@@ -16,7 +15,6 @@ body {
     margin: 0;
 }
 
-/* --- ESTRUTURA PRINCIPAL (Player Centralizado - MODO VÍDEO) --- */
 .main-container {
     display: flex;
     flex-direction: column;
@@ -31,7 +29,6 @@ body {
     color: #fff;
 }
 
-/* --- PLAYER CONTAINER (Corpo do Vídeo) --- */
 .player-container {
     width: 100%; 
     padding: 0;
@@ -42,7 +39,6 @@ body {
     overflow: hidden;
 }
 
-/* --- ELEMENTO DE VÍDEO (Substitui a Capa) --- */
 .video-wrapper {
     position: relative;
     width: 100%;
@@ -60,7 +56,6 @@ body {
     display: block;
 }
 
-/* Botão de Play Centralizado */
 .center-play-button {
     position: absolute;
     top: 50%;
@@ -77,7 +72,6 @@ body {
     z-index: 5;
 }
 
-/* --- BARRA DE PROGRESSO DINÂMICA --- */
 .progress-bar-container {
     display: flex;
     align-items: center;
@@ -95,12 +89,10 @@ body {
     color: #fff;
 }
 
-/* AFASTAR TEMPO INICIAL DA BORDA */
 .progress-time:first-child {
-    margin-right: 20px; /* afastado da borda */
+    margin-right: 20px;
 }
 
-/* SLIDER DE BUSCA (SEEK SLIDER) */
 .seek-slider {
     -webkit-appearance: none;
     appearance: none;
@@ -136,18 +128,16 @@ body {
     border-radius: 2px;
 }
 
-/* --- CONTROLES DA BARRA INFERIOR --- */
 .controls {
     display: flex;
     align-items: center;
-    justify-content: center; /* ÍCONES CENTRALIZADOS */
+    justify-content: center; 
     padding: 5px 15px 15px 15px;
     width: 100%; 
-    gap: 25px; /* mais espaçamento entre os botões */
+    gap: 25px;
     margin-bottom: 10px;
 }
 
-/* BOTÕES */
 .control-button {
     border: none;
     background: none; 
@@ -163,7 +153,6 @@ body {
     padding: 0;
 }
 
-/* BOTÃO PLAY/PAUSE */
 .play-button {
     background-color: rgb(78, 59, 59);
     border-radius: 50%;
@@ -186,7 +175,6 @@ body {
     width: auto;
 }
 
-/* --- ESTILOS DO VOLUME VERTICAL --- */
 .volume-control-group {
     position: relative;
     width: 45px; 
